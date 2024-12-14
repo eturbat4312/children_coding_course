@@ -1,0 +1,243 @@
+/* Reset and Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  /* Header Section */
+  header {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+  }
+  
+  header h1 span {
+    color: #ffd700;
+  }
+  
+  header p {
+    margin: 20px 0;
+    font-size: 1.2rem;
+  }
+  
+  header .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ffd700;
+    color: #333;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s ease;
+  }
+  
+  header .btn:hover {
+    background: #ffb400;
+  }
+  
+  /* About Section */
+  #about {
+    background: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  #about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .students {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nomun {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.nomun:hover {
+    transform: translateY(-5px);
+}
+
+.nomun img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.teacher-image{
+    width: 20%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+  
+  /* Contact Section */
+  #contact {
+    background: #ffd700;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  #contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  #contact form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  #contact input, #contact textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  #contact button {
+    padding: 10px 20px;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  #contact button:hover {
+    background: #555;
+  }
+  
+  /* Footer */
+  footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+
+  .game {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.game-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #ff6b6b, #ff8e8e);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+    transition: all 0.3s ease;
+}
+
+.game-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+    background: linear-gradient(135deg, #ff5252, #ff7676);
+}
+
+.game-button:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 10px rgba(255, 107, 107, 0.2);
+}
+
+.game-preview {
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.game-preview img {
+    max-width: 600px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.game-preview img:hover {
+    transform: scale(1.02);
+}
+
+.game-preview p {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.game-preview a {
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+
+.game-preview a:hover img {
+    transform: scale(1.02);
+}
+
+.game-preview a p {
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.game-preview a:hover p {
+    color: #ff6b6b;
+}
+  
+#about p {
+  font-family: 'Arial', sans-serif; /* Clean and modern font */
+  font-size: 1.2em; /* Slightly larger font size */
+  line-height: 1.6; /* Increase line spacing for readability */
+  color: #333; /* Dark gray text */
+  text-align: center; /* Center the text */
+  background-color: #f9f9f9; /* Light gray background for contrast */
+  padding: 15px; /* Add space inside the box */
+  border: 2px solid #0078D4; /* Add a blue border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin: 20px auto; /* Center alignment with space around it */
+  max-width: 700px; /* Limit the width for better readability */
+}
+
+/* Add hover effect for the paragraph (optional) */
+#about p:hover {
+  background-color: #0078D4; /* Blue background on hover */
+  color: white; /* White text on hover */
+  transition: all 0.3s ease-in-out; /* Smooth transition effect */
+}

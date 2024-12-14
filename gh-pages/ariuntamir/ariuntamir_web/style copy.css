@@ -1,0 +1,74 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: lightcyan;
+    color: #333;
+
+}
+.cv-container{
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba (0,0,0,0.1);
+
+}
+header{
+    text-align: center;
+    margin-bottom: 20px;
+}
+header h1{
+    font-size: 36px;
+    color: orange;
+}
+header h2{
+    font-size: 30px;
+    color: blue;
+}
+.name{
+    color: azure;
+    font-weight: bold;
+}
+section{
+    margin-bottom: 20px;
+    
+
+}   
+section h3{
+    font-size: 20px;
+    color: sienna;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+section p{
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 10px;
+    color: greenyellow;
+}
+ul{
+    list-style: square;
+    padding-left: 20px;
+
+
+}
+ul li{
+    font-size: 18px;
+    color: darkblue;
+    margin: 5px 0;
+}
+footer{
+    text-align: center;
+    font-size: 14px;
+    color: #31325e;
+}
+img{
+    max-width: 200px;
+    text-align: center;
+    border-radius: 50%;
+}
+.zurag{
+    display: flex;
+}

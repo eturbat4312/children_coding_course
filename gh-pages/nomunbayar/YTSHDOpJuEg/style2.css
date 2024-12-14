@@ -1,0 +1,33 @@
+img{
+    max-width: 500px;
+    min-height: 500px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+
+}
+
+body{
+    background-image: url('https://th.bing.com/th/id/R.6572e2fd63e5469ac0396382e833c994?rik=Wpk3ctcKNxHgrg&riu=http%3a%2f%2fwww.handelsblatt.com%2fimages%2funser-sonnensystem%2f14000018%2f5-format2020.jpg&ehk=06l3oSWn80Lga%2f3HMVwLtCEp%2fFP%2fbq0oCwjKWHcarYo%3d&risl=&pid=ImgRaw&r=0');
+    background-size: cover;
+}
+header{
+    color: aliceblue;
+    text-align: center;
+
+}
+.header{
+    align-items: center;
+    justify-content: center;
+}
+p{
+    color: #ffffff;
+}
+.button:hover{
+    background-color: rgb(0, 110, 255);
+    
+    
+}

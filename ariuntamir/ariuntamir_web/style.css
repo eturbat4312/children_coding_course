@@ -1,0 +1,103 @@
+.body1{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: rgb(163, 159, 179); */
+    color: #333;
+    background-image: url(https://www.shutterstock.com/image-vector/grunge-halftone-gradient-background-faded-600nw-2464962997.jpg);
+
+}
+.cv-container{
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #61605a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba (0,0,0,0.1);
+
+}
+header{
+    text-align: center;
+    margin-bottom: 20px;
+}
+header h1{
+    font-size: 36px;
+    color: rgb(8, 238, 181);
+}
+header h2{
+    font-size: 30px;
+    color: rgb(9, 243, 243);
+}
+.name{
+    color: rgb(28, 240, 240);
+    font-weight: bold;
+}
+section{
+    margin-bottom: 20px;
+    
+
+}   
+section h3{
+    font-size: 20px;
+    color: rgb(15, 245, 207);
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+section p{
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 10px;
+    color: rgb(110, 159, 233);
+}
+ul{
+    list-style: square;
+    padding-left: 20px;
+
+
+
+}
+ul li{
+    font-size: 18px;
+    color: rgb(50, 175, 184);
+    margin: 5px 0;
+}
+footer{
+    text-align: center;
+    font-size: 14px;
+    color: #000000;
+}
+img{
+    max-width: 200px;
+    text-align: center;
+    border-radius: 50%;
+}
+.zurag{
+    display: flex;
+}
+.button{
+    display: inline-block;
+    padding: 10px 20px;
+    background: yellow;
+    border-radius: 10%;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.button:hover{
+    background: yellowgreen;
+}
+.choko{
+    max-width: 500px;
+}
+.orgiluur{
+    max-width: 500px;
+}
+.office{
+max-width: 500px;
+}
+.baidag{
+    max-width: 500px;
+}
+.hool{
+    max-width: 400px;
+}
