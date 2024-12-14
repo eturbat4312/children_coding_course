@@ -1,0 +1,90 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: rgb(5, 143, 0);
+    background-image: url('https://th.bing.com/th/id/R.6572e2fd63e5469ac0396382e833c994?rik=Wpk3ctcKNxHgrg&riu=http%3a%2f%2fwww.handelsblatt.com%2fimages%2funser-sonnensystem%2f14000018%2f5-format2020.jpg&ehk=06l3oSWn80Lga%2f3HMVwLtCEp%2fFP%2fbq0oCwjKWHcarYo%3d&risl=&pid=ImgRaw&r=0');
+    background-size: cover;
+}
+.cv-container{
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0,1);
+    
+
+}
+header{
+    text-align: center;
+    margin-bottom: 20px;
+}
+header h1{
+    font-size: 36px;
+    color: #2600ff;
+}
+header h2{
+    font-size: 30px;
+    color: #33ff00;
+}
+.name{
+    color: #0400ff;
+    font-weight: bold;
+}
+section{
+    margin-bottom: 20px;
+}
+section h3{
+    font-size: 20px;
+    color: #cf8e00;
+    border-bottom: 2px solid rgba(85, 106, 151, 0.658);
+    padding-bottom: 5px;
+}
+.hi{
+    color: #33ff00;
+    font-weight: bold;
+}
+ul{
+    list-style: square;
+    padding-left: 20px;
+}
+ul li{
+    font-size: 18px;
+    color: rgb(0, 68, 255);
+    margin: 5px 0;
+}
+footer{
+    text-align: center;
+    font-size: 14px;
+    color: skyblue;
+}
+section p{
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 10px;
+    color: #0084ff;
+}
+img{
+    width: 450px;
+    height: 350px;
+    border-radius: 20%;
+    margin: 0 auto;
+    display: block;
+
+}
+
+footer .back_to_main a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0078D4;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 1em;
+    text-decoration: none;
+    text-align: center;
+}
+
+footer .back_to_main a:hover {
+    background-color: #005bb5;
+}
