@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catch the Ball Game</title>
+  
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        #game-container {
+            position: relative;
+            width: 100%;
+            height: 600px;
+            background-color: #87CEEB;
+            overflow: hidden;
+        }
+
+        #score {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            font-size: 20px;
+            color: white;
+        }
+
+        #basket {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 100px;
+            height: 20px;
+            background-color: brown;
+            border-radius: 5px;
+            transform: translateX(-50%);
+        }
+
+        .ball {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-color: red;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div id="game-container">
+        <div id="score">Score: 0</div>
+        <div id="basket"></div>
+    </div>
+    
+    <script>
+        let score = 0;
+        let gameOver = false;
+        const basket = document.getElementById('basket');
+        const scoreDisplay = document.getElementById('score');
+        let basketPosX = window.innerWidth / 2 - 50;
+
+        // Basket movement speed
+        const moveSpeed = 50;  
+
+        document.addEventListener('keydown', moveBasket);
+
+        function moveBasket(event) {
+            if (event.key === 'ArrowLeft') {
+                basketPosX -= moveSpeed;
+            } else if (event.key === 'ArrowRight') {
+                basketPosX += moveSpeed;
+            }
+
+            // Prevent the basket from going off-screen
+            if (basketPosX < 0) basketPosX = 0;
+            if (basketPosX > window.innerWidth - 100) basketPosX = window.innerWidth - 100;
+
+            basket.style.left = basketPosX + 'px';
+        }
+
+        // Create a new ball
+        function createBall() {
+            const ball = document.createElement('div');
+            ball.classList.add('ball');
+            const ballPosX = Math.random() * (window.innerWidth - 30);
+            ball.style.left = ballPosX + 'px';
+            ball.style.top = '-50px'; // Start above the screen
+            document.getElementById('game-container').appendChild(ball);
+            return { ball, ballPosX };
+        }
+
+        // Drop the ball and check collision
+        function dropBall() {
+            const { ball, ballPosX } = createBall();
+            let ballPosY = -50;
+            const fallSpeed = 3; // Slow ball fall speed
+
+            let dropInterval = setInterval(() => {
+                if (gameOver) {
+                    clearInterval(dropInterval);
+                    return;
+                }
+
+                ballPosY += fallSpeed;
+                ball.style.top = ballPosY + 'px';
+
+                // Check if the ball hits the basket
+                if (ballPosY >= window.innerHeight - 40 && ballPosX >= basketPosX && ballPosX <= basketPosX + 100) {
+                    score++;  // Increase score on catch
+                    scoreDisplay.textContent = "Score: " + score;
+                    document.getElementById('game-container').removeChild(ball);
+                    clearInterval(dropInterval);
+                }
+
+                // Ball falls off the screen
+                if (ballPosY >= window.innerHeight) {
+                    // Ball is off-screen, subtract 1 point
+                    score = Math.max(score - 1, 0);  // Prevent score from going below 0
+                    scoreDisplay.textContent = "Score: " + score;
+                    document.getElementById('game-container').removeChild(ball);
+                    clearInterval(dropInterval);
+                }
+            }, 20);  // Drop the ball every 20ms
+        }
+
+        // Start the game and drop balls every 2 seconds
+        function startGame() {
+            setInterval(dropBall, 2000); // Drop a new ball every 2 seconds
+        }
+
+        startGame();
+    </script>
+</body>
+</html>
+
